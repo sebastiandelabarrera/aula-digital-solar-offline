@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula Digital Solar Offline">
+    <title>Aula Digital Solar Offline</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Aula Digital Solar Offline</h1>
+        <p>Plataforma educativa para el acceso a contenidos sin conexión permanente a internet.</p>
+    </header>
+
+    <main class="contenedor-login">
+
+        <section class="tarjeta-login">
+
+            <div class="estado-red" id="estadoRed">
+                <span class="indicador-red"></span>
+                Red local disponible
+            </div>
+
+            <h2>Bienvenido al aula digital</h2>
+            <p class="texto-inicio">
+                Ingresa tus datos para acceder a los contenidos educativos.
+            </p>
+
+            <form id="formularioLogin">
+
+                <div class="grupo-campo">
+                    <label for="usuario">Usuario</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Ingrese su usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contrasena">Contraseña</label>
+                    <div class="campo-contrasena">
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Ingrese su contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <button type="button" id="mostrarContrasena">
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+                <p id="mensajeLogin" class="mensaje-login" role="alert"></p>
+
+                <button type="submit" class="boton-ingresar">
+                    INGRESAR
+                </button>
+
+            </form>
+
+            <p class="nota-local">
+                Acceso a contenidos educativos mediante la red local.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Archivos JavaScript -->
+    <script src="js/datos.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
